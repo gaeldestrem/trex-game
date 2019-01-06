@@ -87,7 +87,11 @@ class Game extends React.Component<{}, { game: GameModel }> {
       <AppContext.Consumer>
         {({ canvas: { width, height, paddingY, paddingX } }) => (
           <Layer>
-            <Text text={`${game.counter}`} x={width - paddingX} y={paddingY} />
+            <Text
+              text={`Counter: ${game.counter}`}
+              x={width - paddingX}
+              y={paddingY}
+            />
             <Trex
               counter={game.counter}
               x={0}
