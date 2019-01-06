@@ -19,6 +19,7 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
+    "lint": "tslint ./**/*.ts",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
