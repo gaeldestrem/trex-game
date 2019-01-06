@@ -1,0 +1,13 @@
+git:
+  depth: 1
+
+language: node_js
+node_js:
+  - 8.14.0
+
+script:
+  - yarn lint
+
+deploy:
+  provider: script
+  script: yarn deploy
